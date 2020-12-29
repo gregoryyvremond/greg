@@ -1,0 +1,633 @@
+
+/*Police*/
+@font-face{
+    font-family: 'superpolice';
+    src:url('../Police/basic_sans_serif_7.ttf');
+}
+/*zone image
+#logo{
+    width: 60px;
+    margin-left: 50px;
+}
+.listActu img{
+    width: 100px;
+    
+    border-radius: 50%;
+}
+
+/*bar de menu
+.navigation{
+    display: flex;
+    list-style-type: none;
+    
+    padding: 20px;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8em;    
+}
+ul li{
+    padding-left: 25px;
+    font-family: 'superpolice',sans-serif;    
+}
+
+.navigation a {
+    text-decoration: none;
+     color: white;
+    
+}
+.navigation a:hover{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: #00A9D2;
+}
+
+.tete1{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*entete
+header{
+    position: sticky;
+    top:0px;
+    right: 0px;
+    left:0px;
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #BBF61C;
+    
+}
+.nom{
+    margin-left:5px;
+    margin-right: 30px;;
+    font-family: 'superpolice';
+    font-size: 1.5em;
+}*/
+
+.tete1
+{
+    display: flex;
+    padding-right:  80px;
+    align-items: baseline;
+}
+
+header
+{
+    display: flex;
+    margin-bottom: -40px;
+}
+
+nav
+{
+    padding-top: 15px;
+    padding-left: 80px;
+}
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background:skyblue;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+    z-index: 1000;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ nav #menu{
+    display: block;
+
+}
+
+
+
+
+
+/*banner*/
+#banner{ 
+    width:100%;
+    height: 500px;
+    margin-top: -90px;
+    background-image: url('../images/imageCouv3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#banner p{
+    
+    padding-left: 485px;
+    padding-top: 150px;
+    font-family: 'superpolice';
+    font-size: 3.8em;
+    color:white;
+}
+.ustext{
+    color: #BBF61C;
+}
+.usetext2{
+    display: none;
+}
+#banner h4{
+    font-size: 1.5em;
+     color: #BBF61C;
+    font-family: 'superpolice';
+}
+.pre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'superpolice',sans-serif;
+    font-size: 0.8em;
+}
+.ban2{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #e3f2fd;
+}
+.ban2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin-left: 50px;
+    margin-top:25px; 
+    font-size: 0.8em;
+}
+.ban2 h4{
+     font-size: 1em;
+    font-family: 'superpolice',sans-serif;
+}
+.ban2 p{
+    font-family: arial,sans-serif;
+}
+
+.pre h1{
+    color: #00A9D2;  
+}
+
+.barre{
+    text-align: center;
+    background-color: #00A9D2;
+    margin-top: 0px;
+    padding: 20px;
+    font-family: 'superpolice';
+    font-size: 1.5em;
+    color: white;
+}
+/* Ensembles des Services*/
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    align-content: space-around;
+    width: 100%;
+    font-size: 0.7em;
+    font-family: 'superpolice';
+}
+
+.services h4,a{
+    color:#00A6DD;
+    text-decoration: none;
+}
+
+.service2,.service3,.service4,.service5,.service6,.service7
+{
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;   
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px #263238;
+    background-color: #F3F3F3;
+    
+}
+.barre2{
+    background-image: url('../Images/ban.png');
+    width:1252px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.barre2 div{
+    width: 20%;
+    margin-left: 100px;
+    border: 2px solid #F3F3F3;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+.barre2 h4{
+    font-family: 'superpolice',sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+/*pied page*/
+
+#e_geek_footer
+{
+    position: relative;
+    width: auto;
+    height: 200px;
+    margin: 0%;
+    padding: 1%;
+    background-color: #bbf61c;
+}
+
+#e_geek_logo_footer
+{
+    width: 100px;
+    margin: auto;
+}
+#e_geek_logo_footer img
+{
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#e_geek_conteneur_footer
+{
+    display: flex;
+    position:relative;
+    justify-content: center;
+	height: 70px;
+    overflow: hidden;
+}
+
+.footer_block img
+{
+    width: 50px;
+    margin: 5px;
+}
+
+#e_geek_libelle_footer
+{
+    font-family: 'basic_sans_serif';
+    position: absolute;
+    width: 98%;
+    left: 0%;
+    height: 70px;
+    padding: 1%;
+    background-color: #b5e019;
+    margin: 0px;
+    text-align: center;
+}
+
+/*definition des media queries*/
+
+@media (min-width: 1024px) and (max-width: 1275px){
+    .barre2{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+   #banner{ 
+        width:100%;
+        max-width: 100%;
+        max-height: 300px;
+        background-size: cover;
+    }
+    #banner h4{
+    font-size: 0.7em;
+     color: #BBF61C;
+    font-family: 'superpolice';
+    }
+    
+    #banner p{
+    padding-left: 300px;
+    padding-top: 180px;
+    font-family: 'superpolice';
+    font-size: 2.2em;
+    color:white;
+    }
+    .pre h1{
+        font-size: 1.3em;
+    }
+    .pre p{
+        font-size: 0.8em;
+    } 
+    .barre2{
+        display:none;
+    }
+    
+     /*header
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    nav
+    {
+        padding-left: 0;
+        
+    }
+
+    .tete1
+    {
+       margin-left: 35%; 
+    }
+
+    .ima
+    {
+        width: 35px;
+    }
+    .im
+    {
+        text-align: center;
+    }
+
+    nav li a
+    {
+        min-width: 100px;
+    }*/
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+#banner{ 
+        width:100%;
+        max-width: 100%;
+        max-height: 300px;
+        background-size: cover;
+    }
+    #banner h4{
+    font-size: 0.7em;
+     color: #BBF61C;
+    font-family: 'superpolice';
+    }
+    
+    #banner p{
+    padding-left: 270px;
+    padding-top: 150px;
+    font-family: 'superpolice';
+    font-size: 2.2em;
+    color:white;
+    }
+    .pre h1{
+        font-size: 1.3em;
+    }
+    .pre p{
+        font-size: 0.8em;
+    }
+   
+    .barre2{
+        display:none;
+    }
+    .footer_block img
+    {
+        width: 40px;
+        margin: 5px;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tete1
+    {
+        /*display: flex;
+        /*flex-direction: column;*/
+        margin-left: 35%;
+
+    }
+    
+    #banniere_image
+    {
+        top: 20px;
+        width: 100%;
+    }
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    #logo img 
+    {
+        width: 50%;
+    }
+
+    #logo h6
+    {
+        font-size: 110%;
+
+    }
+
+    
+}
+
+@media (max-width: 480px){
+
+    #banner{ 
+        width:100%;
+        max-width: 100%;
+        max-height: 300px;
+        background-size: cover;
+    }
+    #banner h4{
+    font-size: 0.7em;
+     color: #BBF61C;
+    font-family: 'superpolice';
+    }
+    
+    #banner p{
+    padding-left: 120px;
+    padding-top: 150px;
+    font-family: 'superpolice';
+    font-size: 2.0em;
+    color:white;
+    }
+    .pre{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .pre h1{
+        font-size: 1.3em;
+    }
+    .pre p{
+        font-size: 0.8em;
+    }
+    .ban2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .barre{
+        font-size: 0.7em;
+    }
+    .service2,.service3,.service4,.service5,.service6,.service7{
+        width:80%;
+        height: 80%;
+        max-width: 100%;
+    }
+    .barre2{
+        display: none;
+    }
+    .footer_block img
+    {
+        width: 40px;
+        margin: 5px;
+    }
+    
+    header
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tete1
+    {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        margin-left: 35%;
+
+    }
+    
+    #banniere_image
+    {
+        top: 20px;
+        width: 100%;
+    }
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    #logo img 
+    {
+        width: 50%;
+    }
+
+    #logo h6
+    {
+        font-size: 110%;
+
+    }
+
+    
+}
